@@ -14,12 +14,27 @@
 }
 
 body {
-  background-color: var(--background);
+  background-color: #060913;
   color: var(--foreground);
   font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.011em;
+  background-image: 
+    /* Top luminous cyan-sky aura */
+    radial-gradient(circle 950px at 50% -80px, rgba(14, 165, 233, 0.22), transparent 75%),
+    /* Mid-right vibrant indigo glow */
+    radial-gradient(circle 750px at 95% 450px, rgba(99, 102, 241, 0.16), transparent 70%),
+    /* Mid-left luminous emerald glow */
+    radial-gradient(circle 750px at 5% 950px, rgba(16, 185, 129, 0.15), transparent 65%),
+    /* Bottom right violet aura */
+    radial-gradient(circle 700px at 90% 1600px, rgba(168, 85, 247, 0.14), transparent 65%),
+    /* Technical Grid Lines - crisp and clearly visible */
+    linear-gradient(to right, rgba(255, 255, 255, 0.065) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.065) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+  background-position: 0 0, 0 0, 0 0, 0 0, center top, center top;
+  background-attachment: fixed;
 }
 
 .font-mono,

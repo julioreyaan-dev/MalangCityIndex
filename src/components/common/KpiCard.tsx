@@ -83,7 +83,7 @@ export function KpiCard({
 
   return (
     <div className={cn(
-      "flex flex-col justify-between rounded-xl border border-slate-800/90 bg-[#0c1320] p-4 sm:p-5 shadow-lg hover:shadow-xl transition-all group relative overflow-hidden",
+      "flex flex-col justify-between rounded-2xl border border-slate-700/60 bg-[#0e1726]/70 backdrop-blur-xl p-4 sm:p-5 shadow-xl hover:shadow-2xl transition-all group relative overflow-hidden",
       theme.hoverBorder
     )}>
       {/* Top subtle highlight */}

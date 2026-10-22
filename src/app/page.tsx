@@ -72,7 +72,7 @@ export default async function OverviewPage() {
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
-          <div className="text-left lg:text-right font-mono bg-[#0c1320] border border-slate-800 rounded-xl px-3.5 py-2 shadow-md">
+          <div className="text-left lg:text-right font-mono bg-[#0e1726]/70 backdrop-blur-xl border border-slate-700/60 rounded-xl px-3.5 py-2 shadow-lg">
             <div className="text-[10px] text-slate-400 uppercase tracking-wider flex items-center lg:justify-end gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
               Pembaruan Telemetri
@@ -89,14 +89,14 @@ export default async function OverviewPage() {
       <div className="space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-slate-300 bg-slate-800/90 px-2.5 py-0.5 rounded border border-slate-700">
+            <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-cyan-300 bg-cyan-950/60 px-2.5 py-0.5 rounded-md border border-cyan-800/60 backdrop-blur-sm">
               MODUL EKSPLORASI SEKTORAL
             </span>
-            <span className="text-xs text-slate-400 font-mono hidden sm:inline">
+            <span className="text-xs text-slate-300 font-mono hidden sm:inline">
               Akses cepat analisis koridor, telemetri emisi, dan geospasial
             </span>
           </div>
-          <span className="text-[11px] font-mono text-slate-500">
+          <span className="text-[11px] font-mono text-slate-400">
             3 MODUL UTAMA
           </span>
         </div>
@@ -105,7 +105,7 @@ export default async function OverviewPage() {
           {/* Cardbox 1: Lalu Lintas */}
           <Link
             href="/traffic"
-            className="group relative overflow-hidden rounded-2xl border border-slate-800/90 bg-[#0d1422] p-5 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:border-rose-500/50 hover:shadow-xl flex flex-col justify-between"
+            className="group relative overflow-hidden rounded-2xl border border-slate-700/60 bg-[#0e1726]/70 backdrop-blur-xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-rose-500/50 hover:bg-[#0e1726]/90 hover:shadow-2xl flex flex-col justify-between"
           >
             <div className="space-y-3">
               <div className="flex items-start justify-between">
@@ -127,7 +127,7 @@ export default async function OverviewPage() {
                 </div>
               </div>
 
-              <p className="text-xs text-slate-400 leading-relaxed line-clamp-2">
+              <p className="text-xs text-slate-300 leading-relaxed line-clamp-2">
                 Evaluasi empiris 7 koridor arteri & kolektor Kota Malang, rasio waktu tempuh (TTR), Level of Service PKJI 2023, dan tundaan jam sibuk.
               </p>
             </div>
@@ -145,7 +145,7 @@ export default async function OverviewPage() {
           {/* Cardbox 2: Kualitas Udara */}
           <Link
             href="/air-quality"
-            className="group relative overflow-hidden rounded-2xl border border-slate-800/90 bg-[#0d1422] p-5 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-500/50 hover:shadow-xl flex flex-col justify-between"
+            className="group relative overflow-hidden rounded-2xl border border-slate-700/60 bg-[#0e1726]/70 backdrop-blur-xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-500/50 hover:bg-[#0e1726]/90 hover:shadow-2xl flex flex-col justify-between"
           >
             <div className="space-y-3">
               <div className="flex items-start justify-between">
@@ -167,7 +167,7 @@ export default async function OverviewPage() {
                 </div>
               </div>
 
-              <p className="text-xs text-slate-400 leading-relaxed line-clamp-2">
+              <p className="text-xs text-slate-300 leading-relaxed line-clamp-2">
                 Pemantauan Indeks Standar Pencemar Udara (PerMen LHK 14/2020), konsentrasi mikrogram PM2.5, PM10, dan tren dispersi atmosfer 5 kecamatan.
               </p>
             </div>
@@ -185,7 +185,7 @@ export default async function OverviewPage() {
           {/* Cardbox 3: Peta Spasial */}
           <Link
             href="/map"
-            className="group relative overflow-hidden rounded-2xl border border-slate-800/90 bg-[#0d1422] p-5 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:border-indigo-500/50 hover:shadow-xl flex flex-col justify-between"
+            className="group relative overflow-hidden rounded-2xl border border-slate-700/60 bg-[#0e1726]/70 backdrop-blur-xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-indigo-500/50 hover:bg-[#0e1726]/90 hover:shadow-2xl flex flex-col justify-between"
           >
             <div className="space-y-3">
               <div className="flex items-start justify-between">
@@ -316,7 +316,7 @@ export default async function OverviewPage() {
       </div>
 
       {/* Institutional Insights Memo - Themed Executive Cards */}
-      <div className="rounded-2xl border border-slate-800/90 bg-[#0c1320] p-6 shadow-xl space-y-4">
+      <div className="rounded-2xl border border-slate-700/60 bg-[#0e1726]/60 backdrop-blur-xl p-6 shadow-xl space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-3">
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
@@ -324,17 +324,17 @@ export default async function OverviewPage() {
               Analisis Index Otomatis • Evaluasi Lapangan Kota Malang
             </h2>
           </div>
-          <span className="text-[11px] font-mono text-slate-500">
+          <span className="text-[11px] font-mono text-slate-400">
             METODOLOGI TERKALIBRASI: PKJI 2023 & PERMEN LHK 14/2020
           </span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Card 1: Traffic Criticality */}
-          <div className="rounded-xl border border-rose-500/30 bg-gradient-to-br from-rose-950/40 via-[#0e1625] to-[#0c1320] p-4.5 space-y-2.5 shadow-md">
+          <div className="rounded-2xl border border-rose-500/30 bg-gradient-to-br from-rose-950/50 via-[#0e1726]/80 to-[#090e18]/90 backdrop-blur-xl p-4.5 space-y-2.5 shadow-lg">
             <div className="flex items-center justify-between text-xs">
               <span className="font-bold text-rose-300 uppercase font-mono tracking-wide flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-rose-500" />
+                <span className="h-2 w-2 rounded-full bg-rose-500 animate-ping" />
                 Titik Kritis Kemacetan
               </span>
               <span className="font-mono text-xs font-bold text-rose-300 bg-rose-950/80 px-2 py-0.5 rounded border border-rose-500/40">
@@ -351,10 +351,10 @@ export default async function OverviewPage() {
           </div>
 
           {/* Card 2: Air Quality Dispersion */}
-          <div className="rounded-xl border border-emerald-500/30 bg-gradient-to-br from-emerald-950/40 via-[#0e1625] to-[#0c1320] p-4.5 space-y-2.5 shadow-md">
+          <div className="rounded-2xl border border-emerald-500/30 bg-gradient-to-br from-emerald-950/50 via-[#0e1726]/80 to-[#090e18]/90 backdrop-blur-xl p-4.5 space-y-2.5 shadow-lg">
             <div className="flex items-center justify-between text-xs">
               <span className="font-bold text-emerald-300 uppercase font-mono tracking-wide flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                 Dispersi Polutan Udara
               </span>
               <span className="font-mono text-xs font-bold text-emerald-300 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-500/40">
@@ -371,10 +371,10 @@ export default async function OverviewPage() {
           </div>
 
           {/* Card 3: Capacity & Peak Flow */}
-          <div className="rounded-xl border border-blue-500/30 bg-gradient-to-br from-blue-950/40 via-[#0e1625] to-[#0c1320] p-4.5 space-y-2.5 shadow-md">
+          <div className="rounded-2xl border border-blue-500/30 bg-gradient-to-br from-blue-950/50 via-[#0e1726]/80 to-[#090e18]/90 backdrop-blur-xl p-4.5 space-y-2.5 shadow-lg">
             <div className="flex items-center justify-between text-xs">
               <span className="font-bold text-blue-300 uppercase font-mono tracking-wide flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-blue-500" />
+                <span className="h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
                 Kapasitas Efektif Koridor
               </span>
               <span className="font-mono text-xs font-bold text-blue-300 bg-blue-950/80 px-2 py-0.5 rounded border border-blue-500/40">
@@ -394,14 +394,14 @@ export default async function OverviewPage() {
 
       {/* Interactive Charts Section - Full Responsive Width */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-        <div className="rounded-2xl border border-slate-800/90 bg-[#0c1320] p-5 shadow-xl space-y-3">
+        <div className="rounded-2xl border border-slate-700/60 bg-[#0e1726]/60 backdrop-blur-xl p-5 shadow-xl space-y-3">
           <div className="flex items-center justify-between border-b border-slate-800/80 pb-3">
             <div className="space-y-0.5">
               <div className="flex items-center gap-2">
-                <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/50">
+                <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-cyan-300 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/50">
                   LALU LINTAS & KECEPATAN
                 </span>
-                <span className="text-[11px] font-mono text-slate-500">7 HARI TERAKHIR</span>
+                <span className="text-[11px] font-mono text-slate-400">7 HARI TERAKHIR</span>
               </div>
               <h3 className="text-sm font-bold text-white font-sans">
                 Fluktuasi Kecepatan & Indeks Kemacetan (Pagi vs Sore)
@@ -417,14 +417,14 @@ export default async function OverviewPage() {
           <TrafficTrendChart data={historicalData} height={320} />
         </div>
 
-        <div className="rounded-2xl border border-slate-800/90 bg-[#0c1320] p-5 shadow-xl space-y-3">
+        <div className="rounded-2xl border border-slate-700/60 bg-[#0e1726]/60 backdrop-blur-xl p-5 shadow-xl space-y-3">
           <div className="flex items-center justify-between border-b border-slate-800/80 pb-3">
             <div className="space-y-0.5">
               <div className="flex items-center gap-2">
-                <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/50">
+                <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-emerald-300 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/50">
                   KUALITAS UDARA AMBIEN
                 </span>
-                <span className="text-[11px] font-mono text-slate-500">7 HARI TERAKHIR</span>
+                <span className="text-[11px] font-mono text-slate-400">7 HARI TERAKHIR</span>
               </div>
               <h3 className="text-sm font-bold text-white font-sans">
                 Deret Waktu Partikulat PM2.5 vs Garis Panduan Baku Mutu
@@ -442,7 +442,7 @@ export default async function OverviewPage() {
       </div>
 
       {/* Corridors Spotlight Section - ALL 7 CORRIDORS DISPLAYED */}
-      <div className="rounded-2xl border border-slate-800/90 bg-[#0c1320] p-6 shadow-xl space-y-4">
+      <div className="rounded-2xl border border-slate-700/60 bg-[#0e1726]/60 backdrop-blur-xl p-6 shadow-xl space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800/80 pb-4">
           <div>
             <div className="flex items-center gap-2">
@@ -451,13 +451,13 @@ export default async function OverviewPage() {
                 Status Lengkap Kinerja 7 Koridor Jalan Utama Kota Malang
               </h3>
             </div>
-            <p className="text-xs text-slate-400 font-sans mt-0.5">
+            <p className="text-xs text-slate-300 font-sans mt-0.5">
               Evaluasi empiris kecepatan operasional, kapasitas rencana, tundaan waktu tempuh, dan tingkat pelayanan jalan (LOS PKJI 2023)
             </p>
           </div>
           <Link
             href="/map"
-            className="inline-flex items-center gap-1.5 rounded-lg bg-slate-800/90 border border-slate-700 px-3.5 py-2 text-xs font-semibold text-slate-200 hover:bg-slate-700 hover:text-white transition-colors shadow-sm self-start sm:self-auto font-mono"
+            className="inline-flex items-center gap-1.5 rounded-xl bg-[#090e18]/80 border border-slate-700/80 px-3.5 py-2 text-xs font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition-all shadow-sm self-start sm:self-auto font-mono"
           >
             <MapPin className="h-3.5 w-3.5 text-cyan-400" />
             Eksplorasi di Peta Spasial
@@ -468,36 +468,36 @@ export default async function OverviewPage() {
           {trafficCorridors.map((c) => (
             <div
               key={c.corridor.id}
-              className="rounded-xl border border-slate-800/90 bg-[#0e1625] p-4 space-y-3 hover:border-slate-700 hover:bg-[#111c2e] transition-all flex flex-col justify-between shadow-md"
+              className="rounded-2xl border border-slate-700/60 bg-[#0e1726]/70 backdrop-blur-md p-4 space-y-3 hover:border-slate-600 hover:bg-[#0e1726]/90 transition-all flex flex-col justify-between shadow-lg"
             >
               <div>
                 <div className="flex items-start justify-between gap-1.5 mb-2">
-                  <span className="text-xs font-bold text-slate-100 line-clamp-1 font-sans" title={c.corridor.name}>
+                  <span className="text-xs font-bold text-white line-clamp-1 font-sans" title={c.corridor.name}>
                     {c.corridor.name}
                   </span>
                   <span
-                    className="rounded px-2 py-0.5 text-[10px] font-mono font-bold shrink-0 border"
+                    className="rounded-md px-2 py-0.5 text-[10px] font-mono font-bold shrink-0 border backdrop-blur-sm"
                     style={{
-                      backgroundColor: `${c.congestion.colorHex}20`,
+                      backgroundColor: `${c.congestion.colorHex}25`,
                       color: c.congestion.colorHex,
-                      borderColor: `${c.congestion.colorHex}50`,
+                      borderColor: `${c.congestion.colorHex}60`,
                     }}
                   >
                     LOS {c.congestion.los}
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2 text-xs p-2.5 rounded-lg bg-[#080d16] border border-slate-800/90">
+                <div className="grid grid-cols-2 gap-2 text-xs p-2.5 rounded-xl bg-[#090e18]/80 border border-slate-800/80">
                   <div>
-                    <div className="text-[9px] text-slate-500 font-mono uppercase">Kecepatan:</div>
+                    <div className="text-[9px] text-slate-400 font-mono uppercase">Kecepatan:</div>
                     <div className="font-bold text-white font-mono text-sm">
-                      {c.corridor.observedSpeedKmh} <span className="text-[10px] font-normal text-slate-500">km/j</span>
+                      {c.corridor.observedSpeedKmh} <span className="text-[10px] font-normal text-slate-400">km/j</span>
                     </div>
                   </div>
                   <div>
-                    <div className="text-[9px] text-slate-500 font-mono uppercase">Waktu:</div>
+                    <div className="text-[9px] text-slate-400 font-mono uppercase">Waktu:</div>
                     <div className="font-bold text-white font-mono text-sm">
-                      {c.travelTimeMinutes} <span className="text-[10px] font-normal text-slate-500">mnt</span>
+                      {c.travelTimeMinutes} <span className="text-[10px] font-normal text-slate-400">mnt</span>
                     </div>
                   </div>
                 </div>
@@ -522,7 +522,7 @@ export default async function OverviewPage() {
 
               <div className="text-[10px] text-slate-400 flex items-center justify-between pt-2 border-t border-slate-800/80 font-mono">
                 <span>Kec. {c.corridor.kecamatan}</span>
-                <span className="text-slate-500">{c.corridor.lengthKm} km</span>
+                <span className="text-slate-400">{c.corridor.lengthKm} km</span>
               </div>
             </div>
           ))}
@@ -530,7 +530,7 @@ export default async function OverviewPage() {
       </div>
 
       {/* Simulator Highlight Banner - Enhanced Modern Palette */}
-      <div className="rounded-2xl border border-indigo-900/40 bg-gradient-to-r from-slate-950 via-indigo-950 to-slate-900 p-6 sm:p-8 text-white shadow-lg flex flex-col lg:flex-row items-center justify-between gap-6 relative overflow-hidden">
+      <div className="rounded-2xl border border-indigo-500/40 bg-gradient-to-r from-[#0e1726]/90 via-indigo-950/70 to-[#0e1726]/90 backdrop-blur-xl p-6 sm:p-8 text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6 relative overflow-hidden">
         <div className="absolute -right-16 -top-16 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="space-y-2.5 relative z-10">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-indigo-900/60 px-3 py-1 text-[11px] font-mono text-indigo-300 border border-indigo-700/60">
