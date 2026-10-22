@@ -77,15 +77,15 @@ export function getISPUCategory(ispuValue: number): ISPUCategory {
     return {
       category: "Baik",
       colorHex: "#10b981", // Green
-      badgeClass: "bg-emerald-50 text-emerald-700 border-emerald-200",
+      badgeClass: "bg-emerald-950/70 text-emerald-400 border-emerald-500/40 shadow-xs",
       description: "Tingkat kualitas udara sangat baik, tidak memberikan efek negatif bagi manusia atau hewan.",
       healthAdvice: "Kualitas udara sangat baik. Aman untuk beraktivitas luar ruangan tanpa masker.",
     };
   } else if (ispuValue <= 100) {
     return {
       category: "Sedang",
-      colorHex: "#3b82f6", // Blue / Yellow
-      badgeClass: "bg-blue-50 text-blue-700 border-blue-200",
+      colorHex: "#38bdf8", // Sky/Blue
+      badgeClass: "bg-sky-950/70 text-sky-400 border-sky-500/40 shadow-xs",
       description: "Kualitas udara dapat diterima, namun beberapa polutan mungkin mempengaruhi kelompok rentan.",
       healthAdvice: "Kelompok sensitif sebaiknya mengurangi aktivitas fisik berat di luar ruangan.",
     };
@@ -93,7 +93,7 @@ export function getISPUCategory(ispuValue: number): ISPUCategory {
     return {
       category: "Tidak Sehat",
       colorHex: "#f59e0b", // Amber/Orange
-      badgeClass: "bg-amber-50 text-amber-700 border-amber-200",
+      badgeClass: "bg-amber-950/70 text-amber-400 border-amber-500/40 shadow-xs",
       description: "Kualitas udara bersifat merugikan pada manusia, hewan, dan tumbuhan.",
       healthAdvice: "Gunakan masker saat keluar ruangan. Kelompok sensitif disarankan tetap berada di dalam ruangan.",
     };
@@ -101,15 +101,15 @@ export function getISPUCategory(ispuValue: number): ISPUCategory {
     return {
       category: "Sangat Tidak Sehat",
       colorHex: "#ef4444", // Red
-      badgeClass: "bg-red-50 text-red-700 border-red-200",
+      badgeClass: "bg-rose-950/70 text-rose-400 border-rose-500/40 shadow-xs",
       description: "Kualitas udara dapat meningkatkan risiko kesehatan pada seluruh segmen populasi.",
       healthAdvice: "Hindari seluruh aktivitas di luar ruangan. Tutup jendela dan gunakan pemurni udara.",
     };
   } else {
     return {
       category: "Berbahaya",
-      colorHex: "#18181b", // Black/Dark
-      badgeClass: "bg-neutral-900 text-white border-neutral-700",
+      colorHex: "#a855f7", // Purple/Dark
+      badgeClass: "bg-purple-950/80 text-purple-300 border-purple-500/50 shadow-xs",
       description: "Tingkat kualitas udara berbahaya dan berpotensi memicu dampak kesehatan darurat.",
       healthAdvice: "Kondisi darurat polusi. Wajib berdiam di dalam ruangan dengan filtrasi udara.",
     };
